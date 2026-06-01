@@ -37,4 +37,16 @@ Created the following project files:
 * README.md
 
 ## Step 5: Commit the files.
+I created my first commit by running:
 
+"C:\Program Files\Git\cmd\git.exe" commit -m "Create project structure and add website assets"
+
+## Step 7: Push the Branch to GitHub
+
+I pushed my branch to GitHub by running:
+
+"C:\Program Files\Git\cmd\git.exe" push -u origin dev/files-creation
+
+## Step 8: Create a Pull Request and merge with the main branch.
+
+After pushing the branch, I created a Pull Request to compare the changes and merged into the main branch, after confirming the changes.
