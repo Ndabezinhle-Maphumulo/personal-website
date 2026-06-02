@@ -47,20 +47,25 @@ I pushed my branch to GitHub by running:
 
 "C:\Program Files\Git\cmd\git.exe" push -u origin dev/files-creation
 
-## Step 7: Create a Pull Request and merge with the main branch.
+## Step 7: Create a Pull Request and Merge with the Main Branch
 
-After pushing the branch, I created a Pull Request to compare the changes and merged into the main branch, after confirming the changes.
+After pushing the branch, I created a Pull Request to compare the changes and merged them into the main branch after confirming the changes.
 
-## Step 8: I then create the content of the website. Modified the .html file.
-* First I create a new branch by running: 
+## Step 8: Create the Website Content
+
+First, I created a new branch by running:
 
 "C:\Program Files\Git\cmd\git.exe" checkout -b dev/invitation-page
 
-This branch should only create the invitation page:
+This branch was used to create the invitation page content:
 
 * Graduation photo
 * Welcome message
 * Graduation details
 * Appreciation message
 
-No RSVP form yet.
+No RSVP form was added at this stage.
+
+## Step 9: Create a Pull Request and Merge with the Main Branch
+
+After pushing the branch, I created a Pull Request to compare the changes and merged them into the main branch after confirming the changes.
