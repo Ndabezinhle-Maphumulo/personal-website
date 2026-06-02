@@ -33,8 +33,34 @@ Created the following project files:
 
 * index.html
 * portfolio.css
-* logo.png
+* graduation-photo.jpg
 * README.md
 
 ## Step 5: Commit the files.
+I created my first commit by running:
 
+"C:\Program Files\Git\cmd\git.exe" commit -m "Create project structure and add website assets"
+
+## Step 6: Push the Branch to GitHub
+
+I pushed my branch to GitHub by running:
+
+"C:\Program Files\Git\cmd\git.exe" push -u origin dev/files-creation
+
+## Step 7: Create a Pull Request and merge with the main branch.
+
+After pushing the branch, I created a Pull Request to compare the changes and merged into the main branch, after confirming the changes.
+
+## Step 8: I then create the content of the website. Modified the .html file.
+* First I create a new branch by running: 
+
+"C:\Program Files\Git\cmd\git.exe" checkout -b dev/invitation-page
+
+This branch should only create the invitation page:
+
+* Graduation photo
+* Welcome message
+* Graduation details
+* Appreciation message
+
+No RSVP form yet.
