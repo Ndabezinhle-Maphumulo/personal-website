@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSVP Form</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+
+    <h1>RSVP Form</h1>
+
+    <form>
+        <p>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name">
+        </p>
+
+        <p>
+            <label for="surname">Surname:</label><br>
+            <input type="text" id="surname" name="surname">
+        </p>
+
+        <p>
+            <label for="attending">Will you attend?</label><br>
+            <select id="attending" name="attending">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="guests">Number of Guests:</label><br>
+            <input type="number" id="guests" name="guests" min="0">
+        </p>
+
+        <button type="submit">Submit RSVP</button>
+    </form>
+
+</body>
+
+</html>
