@@ -139,12 +139,27 @@ The styling changes included:
 
 After reviewing the changes, I merged the Pull Request into the main branch.
 
-## Future Enhancements
+## I then create a button to RSVP.
+## Step 1: Checkout main
+Run: "C:\Program Files\Git\cmd\git.exe" checkout main
 
-The next planned enhancements for the website are:
+## Step 2: Pull origin main
+Run: "C:\Program Files\Git\cmd\git.exe" pull origin main
 
-* Add an RSVP button
-* Add an RSVP form
+## Step 3: Create a new branch for a button
+Run: "C:\Program Files\Git\cmd\git.exe" checkout -b dev/rsvp-button
+
+## Step 4: I updated the index.html by adding an RSVP button below the event details section:
+Added the line: <button>RSVP</button>
+
+## Step 5: I then updated the .css file to style the button.
+
+So what I did was: 
+
+* Adding an RSVP button
+
+## Let now add a form to to RSVP.
+* Adding an RSVP form
 * Capture guest information:
 
   * Name
