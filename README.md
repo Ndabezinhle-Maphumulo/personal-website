@@ -244,3 +244,103 @@ The website now consists of:
 * An RSVP page (rsvp.html)
 
 This structure is more realistic and easier to maintain as new features are added in future branches.
+
+## Step 6: I then committed the changes
+By running: "C:\Program Files\Git\cmd\git.exe" add .
+
+Then commited the changes by running: "C:\Program Files\Git\cmd\git.exe" commit -m "Move RSVP form to dedicated page"
+
+Then push: "C:\Program Files\Git\cmd\git.exe" push -u origin dev/rsvp-form
+
+## Let now create a Thank You Page after RSVP
+
+The next enhancement is to improve the RSVP experience by displaying a confirmation page after a guest submits the RSVP form.
+
+The purpose of this page is to thank guests for responding and confirm that their RSVP has been received.
+
+For now, no information will be stored. The focus remains on learning website navigation, HTML, CSS, Git branching, commits, and Pull Requests.
+
+## Step 1: Switch to the Main Branch
+
+I first switched to the main branch by running:
+
+"C:\Program Files\Git\cmd\git.exe" checkout main
+
+I then pulled the latest changes from GitHub by running:
+
+"C:\Program Files\Git\cmd\git.exe" pull origin main
+
+## Step 2: Create a New Branch
+
+I created a new branch for this feature by running:
+
+"C:\Program Files\Git\cmd\git.exe" checkout -b dev/rsvp-confirmation
+
+This branch is responsible for creating the RSVP confirmation page.
+
+## Step 3: Create the Thank You Page
+
+I created a new file named:
+
+* thank-you.html
+
+This page displays a confirmation message after a guest submits the RSVP form.
+
+The message thanks guests for their response and confirms that we look forward to celebrating with them.
+
+## Step 4: Update the RSVP Form
+
+I updated the RSVP form in `rsvp.html` so that when the Submit RSVP button is clicked, the user is taken to the confirmation page.
+
+I updated the form tag to:
+
+```html
+<form action="thank-you.html">
+```
+
+This creates a navigation flow between pages.
+
+## Step 5: Test the Website Navigation
+
+I tested the website by following the full RSVP process
+
+## Step 6: Update the Website Files
+
+I updated the following files:
+
+* rsvp.html
+* thank-you.html
+* portfolio.css
+
+The RSVP page was updated to redirect users to the confirmation page, while the new thank-you page was created to complete the RSVP journey.
+
+
+## Step 7: Commit the Changes
+
+I committed my changes by running:
+
+"C:\Program Files\Git\cmd\git.exe" add .
+
+I then created a commit by running:
+
+"C:\Program Files\Git\cmd\git.exe" commit -m "Add RSVP confirmation page"
+
+## Step 8: Push the Branch
+
+I pushed the branch to GitHub by running:
+
+"C:\Program Files\Git\cmd\git.exe" push -u origin dev/rsvp-confirmation
+
+## Step 9: Create a Pull Request and Merge with Main
+
+After pushing the branch, I created a Pull Request to review the confirmation page changes.
+
+The changes included:
+
+* Creating a thank-you page
+* Linking the RSVP form to the confirmation page
+* Completing the RSVP user journey
+
+After reviewing the changes, I merged the Pull Request into the main branch.
+
+
