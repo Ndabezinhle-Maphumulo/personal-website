@@ -158,14 +158,89 @@ So what I did was:
 
 * Adding an RSVP button
 
-## Let now add a form to to RSVP.
-* Adding an RSVP form
-* Capture guest information:
+## Step 6: I then add the changes and commit them.
+I ran: "C:\Program Files\Git\cmd\git.exe" add .
+Then: "C:\Program Files\Git\cmd\git.exe" commit -m "Add RSVP button to invitation page"
 
-  * Name
-  * Surname
-  * Attendance (Yes/No)
-  * Number of guests
-* Display a thank-you message after submission
+## Step 7: I pushed the changes
+I ran: "C:\Program Files\Git\cmd\git.exe" push -u origin dev/rsvp-button
 
-For now, no data will be stored. The focus is on learning Git, branching strategies, HTML, and CSS.
+## Add an RSVP Form
+
+The next enhancement is to add an RSVP form to the graduation invitation website.
+
+The form captures the following guest information:
+
+* Name
+* Surname
+* Attendance (Yes/No)
+* Number of Guests
+
+For now, no data will be stored. The focus is on learning Git, branching strategies, HTML, CSS, and website navigation.
+
+## Step 1: Switch to the Main Branch
+
+I first switched to the main branch by running:
+
+"C:\Program Files\Git\cmd\git.exe" checkout main
+
+I then pulled the latest changes from GitHub by running:
+
+"C:\Program Files\Git\cmd\git.exe" pull origin main
+
+## Step 2: Create a New Branch
+
+I created a new branch for this feature by running:
+
+"C:\Program Files\Git\cmd\git.exe" checkout -b dev/rsvp-form
+
+This branch is responsible for creating the RSVP form feature.
+
+## Step 3: Create the RSVP Page
+
+I created a new file named:
+
+* rsvp.html
+
+This page contains the RSVP form and allows guests to enter their information.
+
+The project structure now contains:
+
+* index.html
+* rsvp.html
+* portfolio.css
+* graduation-photo.jpg
+* README.md
+
+## Step 4: Connect the RSVP Button
+
+I updated the RSVP button on the invitation page to navigate to the RSVP page.
+
+I inserted:
+
+<a href="rsvp.html">
+    <button>RSVP</button>
+</a>
+
+This allows visitors to move from the invitation page to the RSVP form page.
+
+## Step 5: Update the Website Files
+
+I updated the following files:
+
+* index.html
+* rsvp.html
+* portfolio.css
+
+The HTML files were updated to separate the invitation page from the RSVP page, while the CSS file was updated to style the RSVP form and improve the user experience.
+
+## What I Learned
+
+This enhancement introduced the concept of website navigation by linking multiple pages together.
+
+The website now consists of:
+
+* An invitation page (index.html)
+* An RSVP page (rsvp.html)
+
+This structure is more realistic and easier to maintain as new features are added in future branches.
