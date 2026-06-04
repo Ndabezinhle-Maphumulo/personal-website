@@ -244,3 +244,13 @@ The website now consists of:
 * An RSVP page (rsvp.html)
 
 This structure is more realistic and easier to maintain as new features are added in future branches.
+
+## Step 6: I then committed the changes
+By running: "C:\Program Files\Git\cmd\git.exe" add .
+
+Then commited the changes by running: "C:\Program Files\Git\cmd\git.exe" commit -m "Move RSVP form to dedicated page"
+
+Then push: "C:\Program Files\Git\cmd\git.exe" push -u origin dev/rsvp-form
+
+## Let now create a Thank you page after RSVP
+
