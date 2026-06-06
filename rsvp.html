@@ -42,19 +42,34 @@
     </form>
 
     <script>
+
+        const scriptURL = "https://script.google.com/macros/s/AKfycbxXlhphAcK70VMExJ3aU-C1hTqqGvRzjWA3BHoiJqC83wvK8J5xnyLfy0uMUL0nCvooqg/exec";
+
         document.getElementById("rsvpForm").addEventListener("submit", function (event) {
 
             event.preventDefault();
 
-            const attending = document.getElementById("attending").value;
+            const formData = new FormData(this);
 
-            if (attending === "yes") {
-                window.location.href = "thank-you.html";
-            } else {
-                window.location.href = "sorry-you-cant-make-it.html";
-            }
+            fetch(scriptURL, {
+                method: "POST",
+                body: formData
+            })
+            .then(() => {
+
+                const attending = document.getElementById("attending").value;
+
+                if (attending === "yes") {
+                    window.location.href = "thank-you.html";
+                } else {
+                    window.location.href = "sorry-you-cant-make-it.html";
+                }
+
+            })
+            .catch(error => console.error("Error!", error));
 
         });
+
     </script>
 
 </body>

@@ -343,4 +343,118 @@ The changes included:
 
 After reviewing the changes, I merged the Pull Request into the main branch.
 
+# Connect the RSVP Form to Google Sheets
 
+The next enhancement is to collect RSVP responses automatically and store them in a Google Sheet.
+
+This allows guests to submit their RSVP information through the website while the data is collected in the background for event planning purposes.
+
+The following information is collected:
+
+* Name
+* Surname
+* Attendance (Yes/No)
+* Number of Guests
+
+## Step 1: Switch to the Main Branch
+
+I first switched to the main branch by running:
+
+"C:\Program Files\Git\cmd\git.exe" checkout main
+
+I then pulled the latest changes from GitHub by running:
+
+"C:\Program Files\Git\cmd\git.exe" pull origin main
+
+## Step 2: Create a New Branch
+
+I created a new branch for this feature by running:
+
+"C:\Program Files\Git\cmd\git.exe" checkout -b dev/data-collection
+
+This branch is responsible for collecting RSVP responses and storing them in Google Sheets.
+
+## Step 3: Create a Google Sheet
+
+I created a Google Sheet named:
+
+* Graduation RSVP Responses
+
+The spreadsheet contains the following columns:
+
+* Name
+* Surname
+* Attending
+* Guests
+
+## Step 4: Create a Google Apps Script
+
+Using Google Apps Script, I created a web application that receives form submissions and stores them in the spreadsheet.
+
+The script captures:
+
+* Name
+* Surname
+* Attendance
+* Number of Guests
+
+for every RSVP submission.
+
+## Step 5: Deploy the Apps Script
+
+I deployed the Apps Script as a Web App.
+
+The deployment settings were:
+
+* Execute as: Me
+* Who has access: Anyone
+
+This generated a Web App URL that can receive form submissions from the website.
+
+## Step 6: Connect the Website Form
+
+I updated:
+
+* rsvp.html
+
+The RSVP form now sends data directly to the Google Apps Script using JavaScript and the Fetch API.
+
+The data is stored automatically in the Google Sheet when a guest submits the form.
+
+## Step 7: Redirect Users After Submission
+
+After the RSVP is successfully submitted:
+
+* Guests selecting "Yes" are redirected to thank-you.html
+* Guests selecting "No" are redirected to sorry-you-cant-make-it.html
+
+This provides a personalised response based on the guest's attendance selection.
+
+## What I Learned
+
+This enhancement introduced:
+
+* Google Sheets integration
+* Google Apps Script
+* JavaScript Fetch API
+* Form submission handling
+* Data collection from a website
+* Background processing of user submissions
+
+The website can now collect RSVP responses automatically while keeping the experience simple for guests.
+
+## Step 8: Commit the Changes
+
+I added the changes by running:
+
+"C:\Program Files\Git\cmd\git.exe" add .
+
+I then committed the changes by running:
+
+"C:\Program Files\Git\cmd\git.exe" commit -m "Connect RSVP form to Google Sheets"
+
+## Step 9: Push the Branch
+
+I pushed the branch to GitHub by running:
+
+"C:\Program Files\Git\cmd\git.exe" push -u origin dev/data-collection
