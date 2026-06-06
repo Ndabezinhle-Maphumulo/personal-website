@@ -12,7 +12,7 @@
 
     <h1>RSVP Form</h1>
 
-    <form action="thank-you.html">
+    <form id="rsvpForm">
 
         <p>
             <label for="name">Name:</label><br>
@@ -40,6 +40,22 @@
         <button type="submit">Submit RSVP</button>
 
     </form>
+
+    <script>
+        document.getElementById("rsvpForm").addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            const attending = document.getElementById("attending").value;
+
+            if (attending === "yes") {
+                window.location.href = "thank-you.html";
+            } else {
+                window.location.href = "sorry-you-cant-make-it.html";
+            }
+
+        });
+    </script>
 
 </body>
 
